@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="contactform.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <div class="navbar"> 
+            <div class="navlist">
+            <a href="portfolio.html">Home  </a>
+            <a href="projects.html"> Projects </a>
+            <a href="about.html"> About</a>
+           </div>
+           <div class="sidebar5">
+            <div class="connect">
+                <a href="https://www.facebook.com/ " class="social-facebook">
+                <i id="facebook" class="fa fa-facebook" style="font-size:35px ;color:rgb(57, 198, 245)"></i></a>
+                <a href="mailto:garimas1123@gmail.com"> <i class="fa fa-envelope" style="font-size:35px;color:red"></i></a>
+                <a href="https://www.linkedin.com/in/garima-singh-134a03152/ " class="social-icon si-rounded si-small si-linkedin">
+                <i id="linkedin" class="fa fa-linkedin" style="font-size:35px; color:rgb(57, 198, 245)"></i></a>
+                
+            </div>
+        </div>
+        </div>
+          <div class="home-title">
+            <span>Want to communicate?</span>
+            <span>Send a message</span>
+            
+          </div>
+          
+        <h1>Contact</h1>
+      <form name="myForm" action="portfolio.html" onsubmit="return validateform()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Your name <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                    Your email address <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Send">      
+                  <input type="reset" value="Reset"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+    
+    </body>
+</html>
+>
